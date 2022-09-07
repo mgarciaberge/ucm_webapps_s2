@@ -5,11 +5,20 @@
     <title>Ejercicio 3 - El primer script</title>
 
     <script type="text/javascript">
-      console.log("Hola Mundo!");
+      // console.log("Hola Mundo!");
+      function wConfirmacion(){
+        let result = window.confirm("Hola Mundo!");
+        if (result == true)
+          document.getElementById("resultado").innerHTML = "Has clicado OK";
+        else
+          document.getElementById("resultado").innerHTML = "Has clicado Cancelar";
+      }
     </script>
+  
   </head>
 
-  <body>
+  <body onload="javascript:wConfirmacion()">
     <p>Esta página contiene el primer script</p>
+    <p id="resultado"></p>
   </body>
 </html>
