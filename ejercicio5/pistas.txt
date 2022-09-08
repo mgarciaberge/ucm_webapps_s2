@@ -1,0 +1,30 @@
+ CONTAR ELEMENTOS DE UNA LISTA.
+ ------------------------------
+ var liList = document.getElementById("myul").getElementsByTagName("li");
+
+   var largo = liList.length
+
+   alert(largo);
+WHERE "myul" is the id of the list and largo is number of li items
+
+<ul id="myul">
+    <li>hello</li>
+    <li>world</li>
+</ul>
+the alert would be 2
+
+<ul id="myul">
+    <li>hello</li>
+    <li>world
+        <ul>
+            <li>here we are</li>
+        <ul>
+    </li>
+</ul>
+
+AÑADIR ELEMENTOS A UNA LISTA:
+------------------------------
+const node = document.createElement("li");
+const textnode = document.createTextNode("Water");
+node.appendChild(textnode);
+document.getElementById("myList").appendChild(node);
