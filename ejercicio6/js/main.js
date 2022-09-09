@@ -1,6 +1,6 @@
 function toggleText(parrafo,enlace){
-    window.alert(parrafo);
-    window.alert(enlace);
+    // window.alert(parrafo);
+    // window.alert(enlace);
 
     let element = document.querySelector('#'+parrafo+'');
     let element1 = document.querySelector('#'+enlace+'');
