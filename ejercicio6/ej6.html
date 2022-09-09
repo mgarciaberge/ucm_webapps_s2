@@ -4,12 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8">
     
-    <title>Ejercicio 7 - DOM básico</title>
+    <title>Ejercicio 6 - DOM básico</title>
+    <link rel="stylesheet" href="ej6.css" />
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
 
   <body>
     <div>
-      <p>
+      <p id="primero" class="visible">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
         enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
         commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
@@ -20,11 +22,11 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
         dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
       </p>
-      <a href="#">Ocultar contenidos</a>
+      <a id="lk1" href="#" onclick="toggleText('primero','lk1');">Ocultar contenidos</a>
     </div>
     <br />
     <div>
-      <p>
+      <p id="segundo" class="visible">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
         enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
         commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
@@ -35,11 +37,11 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
         dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
       </p>
-      <a href="#">Ocultar contenidos</a>
+      <a id="lk2" href="#" onclick="toggleText('segundo','lk2');" >Ocultar contenidos</a>
     </div>
     <br />
     <div>
-      <p>
+      <p id="tercero" class="visible">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis
         enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue,
         commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
@@ -50,8 +52,8 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum
         dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
       </p>
-      <a href="#">Ocultar contenidos</a>
+      <a id="lk3" href="#" onclick="toggleText('tercero','lk3');">Ocultar contenidos</a>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
+    
   </body>
 </html>

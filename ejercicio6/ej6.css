@@ -1,0 +1,15 @@
+.additional{
+    text-align: center;
+    color: blueviolet;
+  }
+  
+.hidden{
+    display: none;
+  }
+  
+.visible{
+    display: "";
+  }
+  
+  
+  
